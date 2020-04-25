@@ -1,0 +1,44 @@
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background-color: lavender;
+  font-size: large;
+  align-content: center;
+  min-height: 7em;
+}
+
+textarea {
+  height: 80px;
+  margin: 10px;
+  padding: 5px;
+  font-family: inherit;
+  border: none;
+  font-size: medium;
+}
+
+button {
+  background: rgb(102, 115, 255) !important;
+  color: #f8f8f5;
+  font-size: 22px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin: 0 20px;
+  padding: 5px;
+  border: none;
+}
+
+button:hover {
+  filter: brightness(115%);
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+  #form {
+    font-size: medium;
+  }
+}

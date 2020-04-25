@@ -15,7 +15,7 @@ export function submitter(e) {
     if (text.length <= 20) {
       messageOne.textContent = 'Text must be at least 20 characters long. Try again!'
     } else {
-      updater(response)
+      Client.updater(response)
     }
   })
 }
