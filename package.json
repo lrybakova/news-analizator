@@ -20,12 +20,11 @@
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {},
-  
   "scripts": {
     "build": "webpack",
     "test": "jest --watch",
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "jest": {
     "testEnvironment": "node"
