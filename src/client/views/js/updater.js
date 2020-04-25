@@ -1,4 +1,4 @@
-function updater (response) {
+export function updater (response) {
 
   response.json().then((data) => {
   if(data.error) {
@@ -16,4 +16,6 @@ const messageFour = document.querySelector('#message-4')
   }
   
 })}
+
+
 

@@ -6,9 +6,10 @@ const cors = require('cors')
 
 
 const app = express()
-const publicDirectoryPath = path.join(__dirname, '../public')
 
-app.use(express.static(publicDirectoryPath))
+//const distDirectoryPath = path.join(__dirname, '../dist')
+//app.use(express.static('dist'))
+app.use(express.static('dist'))
 
 app.get('', (req, res) => {
   res.send('hello')

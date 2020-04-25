@@ -1,4 +1,4 @@
-const apiRequest = require('../src/utils/apirequest.js')
+const apiRequest = require('../src/server/utils/apirequest.js')
 
 
 
