@@ -1,5 +1,5 @@
 # nlp
-nlp
+Natural launguage processing app
 
 * Architecture
 
@@ -48,5 +48,6 @@ nlp
 
 * Interactions
 
-- The page includes: s single field form that uses the correct html tags and structure, also there is validation process for the form input. 
-  Texts shorter than 20 simbols are not allowed and empty request has dedicated error message in place. 
+- The page includes single field form that uses the correct html tags and structure
+- There is validation process for the form input. 
+- Texts shorter than 20 simbols are not allowed and empty request has dedicated error message in place. 

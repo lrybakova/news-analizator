@@ -41,6 +41,12 @@ app.get('/api', (req, res) => {
   }
 })
 
+app.get("/service-worker.js", (req, res) => {
+  res.sendFile(path.resolve('dist', "service-worker.js"));
+});
+
+
+
 app.get('/*', (req, res) => {
   res.end('404')
 })
