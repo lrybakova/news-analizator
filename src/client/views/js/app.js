@@ -5,7 +5,6 @@ export function submitter(e) {
   let messageOne = document.querySelector('#message-1')
   let messageTwo = document.querySelector('#message-2')
   let messageThree = document.querySelector('#message-3')
-  let messageFour = document.querySelector('#message-4')
   const text = textQuery.value
  
   messageOne.textContent = 'Loading...'

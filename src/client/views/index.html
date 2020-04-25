@@ -26,10 +26,23 @@
   <p id="message-1"></p>
   <p id="message-2"></p>
   <p id="message-3"></p>
-  <p id="message-4"></p>
   </div>
 </div>
 </div>
-
+<footer>Created by L Rybakova</footer>
+<script>
+  
+  if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
 </body>
 </html>

@@ -7,10 +7,10 @@ export function updater (response) {
 const messageTwo = document.querySelector('#message-2')
 const messageThree = document.querySelector('#message-3')
 const messageFour = document.querySelector('#message-4')
-    messageOne.textContent = 'Here is the text: ' + data.yourText
-    messageTwo.textContent = 'Text polarity: ' + data.polarity
-    messageThree.textContent = 'Polarity confidence: ' + data.polarityConfidence
-    messageFour.textContent = 'Subjectivity confidence: ' + data.subjectivityConfidence
+    
+    messageOne.textContent = 'Text polarity: ' + data.polarity
+    messageTwo.textContent = 'Polarity confidence: ' + data.polarityConfidence
+    messageThree.textContent = 'Subjectivity confidence: ' + data.subjectivityConfidence
     
   }
   

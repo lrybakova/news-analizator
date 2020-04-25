@@ -20,12 +20,7 @@ body {
   ) !important;
 }
 
-.headline {
-  background: none;
-  font-size: x-large;
-  color: white;
-  background-color: cornflowerblue;
-}
+
 
 .main-content {
   display: flex;
@@ -34,12 +29,14 @@ body {
   text-align: center;
   margin: 0;
   padding: 10px;
+  
+ 
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px;
   background-color: lavender;
   font-size: large;
@@ -49,7 +46,7 @@ form {
 
 textarea {
   height: 80px;
-  margin: 10px;
+  margin: 10px 0;
   padding: 5px;
   font-family: inherit;
   border: none;
@@ -72,42 +69,36 @@ button:hover {
 }
 
 .results {
-  margin: 10px;
+  margin: 10px 0;
   font-size: medium;
   line-height: inherit;
   text-align: center;
   padding: 5px;
   color: darkorchid;
   background-color: whitesmoke;
-  min-height: 6.5em;
+  min-height: 23vh;
 }
+
 
 @media screen and (min-width: 700px) {
   .holder {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-size: large;
   }
-  .headline {
-    font-size: x-large;
-  }
+  
 
-  #form {
+  form {
     font-size: medium;
-  }
-}
-@media screen and (min-width: 900px) {
-  .holder {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: x-large;
-  }
-  .headline {
-    font-size: x-large;
-    width: 50%;
+    font-size: small;
+ 
     margin-left: auto;
     margin-right: auto;
   }
+  
+  .results {
+    min-height: 32vh;
+  }
 }
+//
