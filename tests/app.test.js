@@ -2,6 +2,7 @@ const express = require('express')
 const request = require('supertest')
 const app = require('../src/server/app')
 const apiRequest = require('../src/server/utils/apirequest.js')
+const babelPolyfill = require('babel-polyfill')
 
 
 

@@ -12,8 +12,11 @@ output: {
 devServer: {
   contentBase: path.join(__dirname, 'dist'),
   compress: true,
-  port: 3000,
-  writeToDisk: true
+  port: 8000,
+  writeToDisk: true,
+  headers: {
+    'Access-Control-Allow-Origin': '*'
+  }
 },
 module: {
   rules: [
@@ -48,6 +51,5 @@ plugins: [
     cleanStaleWebpackAssets: true,
     protectWebpackAssets: false
 })
-
 ]
 }

@@ -2,11 +2,13 @@
 const path = require('path')
 const express = require('express')
 const apiRequest = require('./utils/apirequest.js')
-const cors = require('cors')
+var cors = require('cors')
+
 
 
 const app = express()
-
+app.use(cors());
+app.options('*', cors())
 //const distDirectoryPath = path.join(__dirname, '../dist')
 //app.use(express.static('dist'))
 app.use(express.static('dist'))
