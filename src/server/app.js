@@ -3,7 +3,11 @@ const path = require('path')
 const express = require('express')
 const apiRequest = require('./utils/apirequest.js')
 var cors = require('cors')
-
+var AYLIENTextAPI = require('aylien_textapi');
+var textapi = new AYLIENTextAPI({
+  application_id: "e5b72823",
+  application_key: "51fc31345a0bb4f01edb4659f3e3748f"
+});
 
 
 const app = express()
@@ -25,17 +29,13 @@ app.get('/api', (req, res) => {
     })
   } else {
     const text = req.query.text
-    apiRequest(text, (error, data) => {
+    textapi.sentiment({
+      'text': text
+    }, function(error, data) {
       if (error) {
         return res.send({ error })
       } else {
-        res.send({
-          yourText: data.yourText,
-          polarity: data.polarity,
-          subjectivity: data.subjectivity,
-          polarityConfidence: data.polarityConfidence,
-          subjectivityConfidence: data.subjectivityConfidence
-        })
+        res.send(data)
       }
     })
   }

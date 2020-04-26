@@ -3,15 +3,15 @@ export function updater (response) {
   if(data.error) {
     messageOne.textContent = data.error
   } else { 
+    
     const messageOne = document.querySelector('#message-1')
-const messageTwo = document.querySelector('#message-2')
-const messageThree = document.querySelector('#message-3')
-const messageFour = document.querySelector('#message-4')
-    
+    const messageTwo = document.querySelector('#message-2')
+    const messageThree = document.querySelector('#message-3')
+    const messageFour = document.querySelector('#message-4')
     messageOne.textContent = 'Text polarity: ' + data.polarity
-    messageTwo.textContent = 'Polarity confidence: ' + data.polarityConfidence
-    messageThree.textContent = 'Subjectivity confidence: ' + data.subjectivityConfidence
-    
+    messageTwo.textContent = 'Subjectivity: ' + data.subjectivity
+    messageThree.textContent = 'Subjectivity confidence: ' + data.subjectivity_confidence
+    messageFour.textContent = 'Polarity confidence: ' + data.polarity_confidence
   }
   
 })}
