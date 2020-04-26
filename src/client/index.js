@@ -1,6 +1,6 @@
 
-import { submitter } from './views/js/app';
-import { updater } from './views/js/updater';
+import { submitter } from './js/app';
+import { updater } from './js/updater';
 
 import './views/scss/footer.scss';
 import './views/scss/form.scss';
