@@ -5,16 +5,14 @@ const apiRequest = require('./utils/apirequest.js')
 var cors = require('cors')
 var AYLIENTextAPI = require('aylien_textapi');
 var textapi = new AYLIENTextAPI({
-  application_id: "e5b72823",
-  application_key: "51fc31345a0bb4f01edb4659f3e3748f"
+  application_id: process.env.API_ID,
+  application_key: process.env.API_ID
 });
 
 
 const app = express()
 app.use(cors());
 app.options('*', cors())
-//const distDirectoryPath = path.join(__dirname, '../dist')
-//app.use(express.static('dist'))
 app.use(express.static('dist'))
 
 app.get('', (req, res) => {
